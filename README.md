@@ -1,6 +1,6 @@
 # Ansible Role: Packer Debian/Ubuntu Configuration for Vagrant VirtualBox
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-packer-debian.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-packer-debian)
+[![Build Status](https://travis-ci.org/olidrouin/ansible-role-packer-debian.svg?branch=master)](https://travis-ci.org/olidrouin/ansible-role-packer_debian)
 
 This role configures Debian/Ubuntu (either minimal or full install) in preparation for it to be packaged as part of a .box file for Vagrant/VirtualBox or Vagrant/Vmware_desktop deployment using [Packer](http://www.packer.io/).
 
@@ -19,7 +19,7 @@ Prior to running this role via Packer, you need to make sure Ansible is installe
     "type": "ansible-local",
     "playbook_file": "ansible/main.yml",
     "role_paths": [
-      "/Users/jgeerling/Dropbox/VMs/roles/geerlingguy.packer-debian",
+      "/cygwin/c/dev/ansible-role-packer_debian",
     ]
   }
 ],
@@ -92,7 +92,7 @@ None.
 ---
 - hosts: all
   roles:
-    - geerlingguy.packer-debian
+    - olidrouin.packer_debian
 ```
 
 ## License
@@ -101,4 +101,6 @@ MIT / BSD
 
 ## Author Information
 
+
+This role was modified in 2019 by Olivier Drouin.
 This role was created in 2014 by [Jeff Geerling](https://www.jeffgeerling.com/), author of [Ansible for DevOps](https://www.ansiblefordevops.com/).
